@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kaanxsrd/hookline/releases/download/v1.0.0/hookline_1.0.0_windows_amd64.zip",
+            "bin": [
+                "hookline.exe"
+            ],
+            "hash": "897913bbe4ee537c38ed7320684ad7737286c8d8a1957d17e50db94185e24a66"
+        },
+        "arm64": {
+            "url": "https://github.com/kaanxsrd/hookline/releases/download/v1.0.0/hookline_1.0.0_windows_arm64.zip",
+            "bin": [
+                "hookline.exe"
+            ],
+            "hash": "785ebaa3f146143daeb6e348a0f00e339cbb93a64091141b0d6dc14d701e013e"
+        }
+    },
+    "homepage": "https://github.com/kaanxsrd/hookline",
+    "license": "GPL-3.0-only",
+    "description": "Catch every webhook. Replay anything. Pipe it to localhost."
+}
