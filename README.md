@@ -3,7 +3,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="scoop-bucket: 2 packages for Windows" src="assets/banner-light.svg" width="100%">
+  <img alt="scoop-bucket: 3 packages for Windows" src="assets/banner-light.svg" width="100%">
 </picture>
 
 <br>
@@ -13,7 +13,7 @@
 <br>
 
 [![Scoop](https://img.shields.io/badge/Scoop-scoop--bucket-5cc2ff?style=flat-square&logo=windows&logoColor=white)](https://scoop.sh)
-[![packages](https://img.shields.io/badge/packages-2-8b7cf6?style=flat-square)](#packages)
+[![packages](https://img.shields.io/badge/packages-3-8b7cf6?style=flat-square)](#packages)
 [![Windows](https://img.shields.io/badge/Windows-x64_+_arm64-111111?style=flat-square)](#packages)
 [![updates](https://img.shields.io/badge/updates-automatic-0b9472?style=flat-square&logo=githubactions&logoColor=white)](#how-it-works)
 
@@ -32,6 +32,7 @@
 | Package | Version | Runs on | What it does | Install |
 | --- | --- | --- | --- | --- |
 | [**clonex**](https://github.com/kaanxsrd/CloneX) | `2.0.0` | Windows (x64, arm64) | Preview and copy the structure of a Discord server. | `scoop install clonex` |
+| [**disweep**](https://github.com/kaanxsrd/Disweep) | `1.0.0` | Windows (x64, arm64) | Sweep your Discord messages. Review it first. | `scoop install disweep` |
 | [**hookline**](https://github.com/kaanxsrd/hookline) | `1.0.1` | Windows (x64, arm64) | Catch every webhook. Replay anything. Pipe it to localhost. | `scoop install hookline` |
 
 ## Install
