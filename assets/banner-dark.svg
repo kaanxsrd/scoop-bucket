@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img">
+<title>scoop-bucket</title>
+<defs>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5cc2ff"/><stop offset="1" stop-color="#8b7cf6"/></linearGradient>
+<radialGradient id="glow" cx="0.1" cy="0" r="0.75"><stop stop-color="#5cc2ff" stop-opacity="0.2"/><stop offset="1" stop-color="#5cc2ff" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.05"/></pattern>
+</defs>
+<rect width="1280" height="400" fill="#07090f"/>
+<rect width="1280" height="400" fill="url(#glow)"/>
+<rect width="1280" height="400" fill="url(#dots)"/>
+<g transform="translate(88 92)">
+<path d="M38 0 76 19v38L38 76 0 57V19Z" fill="url(#accent)"/>
+<path d="M38 38 76 19M38 38 0 19M38 38v38" stroke="#07090f" stroke-width="5" stroke-linejoin="round" stroke-opacity="0.75"/>
+</g>
+<text x="184" y="154" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-2"><tspan fill="url(#accent)">scoop-bucket</tspan></text>
+<text x="88" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" letter-spacing="-0.5" fill="#f3f6fb">Every tool, one scoop install away.</text>
+<rect x="88" y="288" width="122" height="38" rx="19" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.11"/><text x="104" y="312" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#f3f6fb">2 packages</text><rect x="220" y="288" width="95" height="38" rx="19" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.11"/><text x="236" y="312" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#f3f6fb">Windows</text><rect x="325" y="288" width="140" height="38" rx="19" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.11"/><text x="341" y="312" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#f3f6fb">auto-updated</text>
+<rect x="780" y="117" width="424" height="166" rx="18" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.11"/>
+<text x="812" y="161" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="2" fill="#7c8696">PACKAGES</text>
+<text x="812" y="207" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#f3f6fb">clonex</text><text x="1172" y="207" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" fill="url(#accent)">v2.0.0</text><text x="812" y="253" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#f3f6fb">hookline</text><text x="1172" y="253" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" fill="url(#accent)">v1.0.1</text>
+</svg>
