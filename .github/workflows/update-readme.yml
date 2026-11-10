@@ -1,0 +1,50 @@
+name: Update README
+
+# Runs after a project's release pipeline commits a package here. It validates every package and
+# rebuilds the README and banners. Pushes from this workflow never trigger it again.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.json"
+      - "bucket/**"
+      - "scripts/**"
+      - ".github/workflows/update-readme.yml"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - name: Validate every package
+        run: python3 scripts/update_readme.py --validate
+      - name: Rebuild the README and banners
+        if: github.event_name != 'pull_request'
+        run: python3 scripts/update_readme.py
+      - name: Commit the result under the repository owner's account
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "$GITHUB_REPOSITORY_OWNER"
+          git config user.email "${GITHUB_REPOSITORY_OWNER_ID}+${GITHUB_REPOSITORY_OWNER}@users.noreply.github.com"
+          git add README.md assets
+          if git diff --cached --quiet; then
+            echo "Already up to date."
+            exit 0
+          fi
+          git commit -m "docs: update the package list"
+          for _ in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
